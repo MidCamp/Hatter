@@ -1,6 +1,6 @@
 # Site configuration
 
-title: 'Hatter'
+title: 'MidCamp Hatter Styleguide'
 url: ''
 
 text_extensions: [ 'htm', 'html', 'html.twig', 'twig.html', 'js', 'less', 'markdown', 'md', 'mkd', 'mkdn', 'coffee', 'css', 'erb', 'haml', 'handlebars', 'hb', 'ms', 'mustache', 'php', 'rb', 'sass', 'scss', 'slim', 'txt', 'twig', 'xhtml', 'xml', 'svg' ]

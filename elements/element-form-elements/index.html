@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements | MidCamp Hatter Styleguide</title>
+  <link rel="stylesheet" href="https://midcamp.github.io/hatter/assets/css/styles.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://midcamp.github.io/hatter/assets/imgs/favicon.ico" type="image/x-icon" />
+  <!-- mapbox -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<div class="container">
+  <header class="styleguide-header">
+    <h5 class="styleguide-label">Living Styleguide</h5>
+    <a href="/"><h1>MidCamp Hatter Styleguide</h1></a>
+  </header>
+</div>
+
+  <div class="styleguide-description">
+  <div class="container">
+    <div class="l-styleguide-column">
+      <main>
+        <h2>Form Elements</h2>
+        <p> Basic form elements and its wrapping containers.</p>
+      </main>
+    </div>
+  </div>
+</div>  
+    <div class="styleguide-component">
+      <div class="container">
+        <div class="l-1up">
+          <div class="container">
+  <div class="l-1up>">
+    <form id="myForm" action="#" method="post">
+      <div class="form-block">
+        <label for="name">Text Input:</label>
+        <input type="text" name="name" id="name" value="" tabindex="1">
+      </div>
+
+      <div class="form-row">
+        <div class="form-block--half">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" value="" tabindex="1">
+        </div>
+
+        <div class="form-block--half">
+          <label for="url">Website</label>
+          <input type="url" name="url" id="url" value="" tabindex="1">
+        </div>
+      </div>
+
+      <div class="form-block">
+        <fieldset>
+          <legend>Choose One Option</legend>
+          <div class="form-option-container">
+            <label for="radio-choice-1">Choice 1</label>
+            <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1">
+          </div>
+          <div class="form-option-container">
+            <label for="radio-choice-2">Choice 2</label>
+            <input type="radio" name="radio-choice-1" id="radio-choice-2" tabindex="2" value="choice-1">
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-block">
+        <label for="select-choice">Select Dropdown Choice</label>
+        <div class="select-container">
+          <select name="select-choice" id="select-choice">
+            <option value="Choice 1">Choice 1</option>
+            <option value="Choice 2">Choice 2</option>
+            <option value="Choice 3">Choice 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-block">
+        <label for="textarea">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+      </div>
+
+      <div class="form-block">
+      <fieldset>
+        <legend>Choose an One or Many</legend>
+        <div class="form-option-container">
+          <label for="checkbox">Option 1</label>
+          <input type="checkbox" name="checkbox">
+        </div>
+        <div class="form-option-container">
+          <label for="checkbox-2">Option 2</label>
+          <input type="checkbox" name="checkbox-2">
+        </div>
+      </fieldset>
+        
+      </div>
+
+      <div class="form-block">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </div>
+
+    </form>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://midcamp.github.io/hatter/assets/libraries/styleguide.js"></script>
+    <script src="https://midcamp.github.io/hatter/assets/js/site.js"></script>
+
+</body>
+</html>

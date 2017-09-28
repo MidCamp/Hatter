@@ -1,7 +1,7 @@
 // Project-specific Butler configuration.
 var overrides = {};
 
-overrides.repo = "git@github.com:midcamp/hatter.git";
+overrides.repo = "git@github.com:MidCamp/Hatter.git";
 overrides.develop_tasks = ['sass', 'spress-serve', 'spress-watch', 'watch'];
 overrides.scss = ['../../src/sass/*.scss', '../../src/sass/**/*.scss'];
 overrides.css = '../../src/content/assets/css/';

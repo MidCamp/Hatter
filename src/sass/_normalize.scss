@@ -298,6 +298,7 @@ sup {
 img {
   // Responsive images
   max-width: 100%;
+  height: auto;
   // Remove border when inside `a` element in IE 8/9.
   border: 0;
   @if support-for(ie, 7) {

@@ -10,5 +10,16 @@
     },
     "require": {
         "spress/spress": "^2.1"
+    },
+    "autoload": {
+        "psr-0": { "MidCamp\\": "src/" }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "MidCamp\\Hatter::installAssets"
+        ],
+        "post-update-cmd": [
+            "MidCamp\\Hatter::installAssets"
+        ]
     }
 }

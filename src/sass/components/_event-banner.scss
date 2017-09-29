@@ -55,6 +55,7 @@
     padding: rhythm(1);
     border: 1px solid $purple;
     border-radius: 25px;
+    box-shadow: 0 0 60px rgba(0,0,0,.4);
   }
 
   @include breakpoint($bp2) {

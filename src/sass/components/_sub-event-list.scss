@@ -8,6 +8,7 @@
 .sub-event-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .sub-event {
@@ -28,12 +29,12 @@
   }
 
   @include breakpoint($bp1) {
-    width: 50%;
+    width: 49%;
     padding: rhythm(2);
   }
 
   @include breakpoint($bp2) {
-    width: 25%;
+    width: 24%;
     padding: rhythm(1) rhythm(1) 0;
   }
 

@@ -99,3 +99,16 @@
     margin-top: 127px;
   }
 }
+
+.sub-event__date {
+  @include adjust-font-size-to($label, 1);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+.sub-event__time {
+  @include adjust-font-size-to($label, .9);
+  font-weight: 400;
+}
+

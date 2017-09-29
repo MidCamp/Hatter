@@ -3,6 +3,5 @@
 
 /vendor/
 /build/
-/src/content/assets/css/
 /node_modules/
 /npm-debug.log

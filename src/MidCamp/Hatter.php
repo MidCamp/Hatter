@@ -30,7 +30,7 @@ class Hatter
       $destination_dir = "{$destination_path}/{$dir_name}";
 
       if (!is_dir($destination_dir)) {
-        mkdir($destination_dir, 755, true);
+        mkdir($destination_dir, 0755, true);
       }
 
       // Copy all the directories in the source directory into the theme.

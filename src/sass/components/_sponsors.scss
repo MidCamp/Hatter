@@ -3,20 +3,33 @@
  * Define the styles for sponsor items Component
  */
 
+.sponsor-1 {
+	 background: url(../imgs/amazeeio-logo.jpg);
+}
+
+.sponsor-2 {
+	 background: url(../imgs/palantirnet-logo.png);
+}
+
+.sponsor-3 {
+	 background: url(../imgs/amazeeio-logo.jpg);
+}
+
+
 .sponsor-item {
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 	display: block;
-	margin: 1em 0 2em;
-	padding: 1em;
-	border-radius: 200px;
-	border: 4px dotted transparent;
+	margin: 0 rhythm(2) 1em;
+	text-align: center;
+	overflow: hidden;
+  height: 0;
+  padding-top: 56.25%;
 
 	img {
-	  display: block;
+	  display: inline-block;
+	  width: auto;
 	}
 
-	&:active,
-	&:hover,
-	&:focus {
-		border: 4px dotted $blue-dark;
-	}
 }

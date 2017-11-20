@@ -131,21 +131,41 @@ title: Homepage
         <p>For more information email us at <a href="mailto:info@midcamp.org">info@midcamp.org</a></p>
       </div>
       <ul class="social--footer">
-        <li class="social__item--footer"><a href="#">{# include 'assets/svg/social-twitter.svg' #} <span>Twitter</span></a></li>
-        <li class="social__item--footer"><a href="#">{# include 'assets/svg/social-facebook.svg' #} <span>Facebook</span></a></li>
-        <li class="social__item--footer"><a href="#">{# include 'assets/svg/social-youtube.svg' #} <span>YouTube</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-twitter.svg' %} <span>Twitter</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-facebook.svg' %} <span>Facebook</span></a></li>
+        <li class="social__item--footer"><a href="#">{% include 'svg/social-youtube.svg' %} <span>YouTube</span></a></li>
       </ul>
     </div>
     <div class="l-2up">
-      <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__list-item"><a href="#">About</a></li>
-          <li class="footer-nav__list-item"><a href="#">Events</a></li>
-          <li class="footer-nav__list-item"><a href="#">Blog</a></li>
-          <li class="footer-nav__list-item"><a href="#">Volunteer</a></li>
-          <li class="footer-nav__list-item"><a href="#">Code of Conduct</a></li>
-        </ul>
-      </nav>
+      <div class="l-1up">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item"><a href="#">About</a></li>
+            <li class="footer-nav__list-item"><a href="#">Events</a></li>
+            <li class="footer-nav__list-item"><a href="#">Blog</a></li>
+            <li class="footer-nav__list-item"><a href="#">Volunteer</a></li>
+            <li class="footer-nav__list-item"><a href="#">Code of Conduct</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-sponsors">
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/vertmanifest_logoweb.png" alt="Manifest">
+          </a>
+        </div>
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/amazeeio-logo.jpg" alt="Amazee.io">
+          </a>  
+        </div>
+        <div class="footer-sponsor">
+          <a class="sponsor-item" href="#">
+            <img src="{{site.url}}/assets/imgs/palantirnet-logo.png" alt="Palantir.net">
+          </a>
+        </div>
+      
+      </div>
     </div>  
   </div>
 </footer>

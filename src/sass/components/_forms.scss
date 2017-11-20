@@ -9,6 +9,10 @@
   margin-bottom: rhythm(1);
 }
 
+.description {
+  font-size: $label;
+}
+
 .form-block--half {
   @extend %form-block;
   width: 50%;

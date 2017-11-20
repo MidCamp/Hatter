@@ -5,6 +5,19 @@
 
 .map-banner {
   position: relative;
+  background: url('../imgs/map.png');
+  background-size: 180%;
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  padding: rhythm(2) 0;
+
+  @include breakpoint($bp2) {
+    background-position: 50% 50%;
+  }
+
+  @include breakpoint($bp3) {
+    background-size: 130%;
+  }
 }
 
 .map-overlay {
@@ -12,28 +25,13 @@
   padding: 0 2em 2em;
 
   @include breakpoint($bp1) {
-    position: absolute;
-    top: 100px;
-    left: 0;
+
     width: 400px;
     z-index: 9999;
     box-shadow: 2px 2px 5px $gray-dark;
   }
 
   @include breakpoint($bp2) {
-    left: 10%;
-  }
-}
-
-.map {
-  height: 300px;
-
-  @include breakpoint($bp1) {
-    height: 700px;
-  }
-
-  @include breakpoint($bp2) {
-    height: 550px;
   }
 }
 

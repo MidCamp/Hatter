@@ -1,10 +1,5 @@
 # The Hatter
 
-- `composer install`
-- `npm install`
-- `npm run butler`
-- 🎉
-
 ## Getting Started
  
  1. From inside the project root, run: `composer install`

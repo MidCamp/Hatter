@@ -17,7 +17,7 @@
  ### Making new components
  When creating a new component: 
  * create the component markup as a twig file in the /includes folder.
- * Create a new file in /conent/components and copy one of the existing files in there. Then replace the include with your newly created include and change the title and description in the yaml of the file to match for your component. 
+ * Create a new file in /content/components and copy one of the existing files in there. Then replace the include with your newly created include and change the title and description in the yaml of the file to match for your component. 
  * In the sass/components/ directory create your new sass partial with an underscore before the title (follow convention of other components in that directory).
  * Add your sass partial to the components section of the styles.scss file which lives in the sass/ directory. The components section starts on line 30 of that file.
  * Butler will be watching your changes and now you should be able to see your component appear in the components list. 

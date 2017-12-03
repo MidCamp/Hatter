@@ -230,3 +230,44 @@
     color: $white;
   }
 }
+
+.top-header__wrapper {
+  font-size: $crumb * 1.4;
+  font-family: $sans;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: $blue;
+  padding: 10px 0;
+  color: $white;
+
+  .block {
+    .block__title {
+      @extend %element-invisible;
+    }
+  }
+  .user-menu__nav {
+    text-align: center;
+  }
+  .secondary-nav__list {
+    margin: 0;
+  }
+  .secondary-nav__item {
+    @extend %list--simple;
+    display: inline-block;
+  }
+  a {
+    padding: 0 10px;
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  @include breakpoint($bp1) {
+    .user-menu__nav {
+      float: right;
+      text-align: right;
+    }
+  }
+}

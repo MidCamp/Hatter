@@ -240,18 +240,16 @@
   padding: 10px 0;
   color: $white;
 
-  .block {
-    .block__title {
-      @extend %element-invisible;
-    }
+  .visually-hidden {
+    @extend %element-invisible;
   }
-  .user-menu__nav {
+  #block-hatter-account-menu {
     text-align: center;
   }
-  .secondary-nav__list {
+  #block-hatter-account-menu ul {
     margin: 0;
   }
-  .secondary-nav__item {
+  #block-hatter-account-menu li {
     @extend %list--simple;
     display: inline-block;
   }
@@ -265,7 +263,7 @@
   }
 
   @include breakpoint($bp1) {
-    .user-menu__nav {
+    #block-hatter-account-menu {
       float: right;
       text-align: right;
     }

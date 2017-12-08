@@ -230,3 +230,42 @@
     color: $white;
   }
 }
+
+.top-header__wrapper {
+  font-size: $crumb * 1.4;
+  font-family: $sans;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: $blue;
+  padding: 10px 0;
+  color: $white;
+
+  .visually-hidden {
+    @extend %element-invisible;
+  }
+  #block-hatter-account-menu {
+    text-align: center;
+  }
+  #block-hatter-account-menu ul {
+    margin: 0;
+  }
+  #block-hatter-account-menu li {
+    @extend %list--simple;
+    display: inline-block;
+  }
+  a {
+    padding: 0 10px;
+    &:link,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  @include breakpoint($bp1) {
+    #block-hatter-account-menu {
+      float: right;
+      text-align: right;
+    }
+  }
+}

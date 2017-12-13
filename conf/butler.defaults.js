@@ -9,6 +9,6 @@ overrides.template_files = ['../../src/*.html', '../../src/**/*.html'];
 overrides.output_dev = '../../build';
 overrides.html_files = ['../../build/*.html', '../../build/**/*.html'];
 overrides.output_prod = '../../build/**/*';
-overrides.spress_bin = '../../../../../../../vendor/bin/spress';
+overrides.spress_bin = '../../../vendor/bin/spress';
 
 module.exports = overrides;

@@ -9,7 +9,6 @@
         "sort-packages": "true"
     },
     "require": {
-        "composer/installers": "~1.0",
         "spress/spress": "^2.1"
     },
     "autoload": {

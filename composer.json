@@ -1,6 +1,6 @@
 {
     "name": "midcamp/hatter",
-    "type": "spress-theme",
+    "type": "butler-styleguide",
     "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -13,13 +13,5 @@
     },
     "autoload": {
         "psr-0": { "MidCamp\\": "src/" }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "MidCamp\\Hatter::installAssets"
-        ],
-        "post-update-cmd": [
-            "MidCamp\\Hatter::installAssets"
-        ]
     }
 }

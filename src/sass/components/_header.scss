@@ -229,6 +229,14 @@
     padding: rhythm(.25) 0 rhythm(.25) rhythm(1.25);
     color: $white;
   }
+
+  a:active,
+  a:hover,
+  a:focus {
+    background-color: $purple;
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 .top-header__wrapper {

@@ -208,7 +208,6 @@
       visibility: visible;
       position: absolute;
       top: 100%;
-      width: 200px;
     }
   }
 
@@ -228,6 +227,14 @@
     margin: 0;
     padding: rhythm(.25) 0 rhythm(.25) rhythm(1.25);
     color: $white;
+  }
+
+  a:active,
+  a:hover,
+  a:focus {
+    background-color: $purple;
+    color: $white;
+    text-decoration: none;
   }
 }
 

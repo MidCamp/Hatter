@@ -237,6 +237,18 @@
     text-decoration: none;
   }
 }
+// hide log in / log out links in main nav for admins
+.admin .item--log-out,
+.admin .item--log-in {
+  display: none;
+}
+// hide log in / log out links in main nav for everyone else when not in mobile viewport
+@include breakpoint($bp1) {
+  .item--log-out,
+  .item--log-in {
+    display: none;
+  }
+}
 
 .top-header__wrapper {
   font-size: $crumb * 1.4;

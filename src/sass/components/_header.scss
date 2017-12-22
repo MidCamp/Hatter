@@ -246,6 +246,9 @@
   background-color: $blue;
   padding: 10px 0;
   color: $white;
+  .path-frontpage & {
+    display: none;
+  }
 
   .visually-hidden {
     display: none;
@@ -281,6 +284,9 @@
   }
 
   @include breakpoint($bp1) {
+    .path-frontpage & {
+      display: block;
+    }
     nav {
       float: right;
       text-align: right;

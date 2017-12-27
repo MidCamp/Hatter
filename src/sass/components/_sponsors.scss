@@ -37,3 +37,25 @@
 		}
 	}
 }
+
+// sponsor nodes
+.sponsor-node-title {
+  @extend %element-invisible;
+}
+.sponsor-node-level {
+  font-weight: bold;
+  margin-bottom: rhythm(.5);
+  & span:after {
+    content: ", ";
+  }
+  & span:last-child:after {
+    content: "";
+  }
+}
+.sponsor-node-logo {
+  max-width: 50%;
+  margin-bottom: rhythm(1);
+  span {
+    @include aspect-ratio(16,9);
+  }
+}

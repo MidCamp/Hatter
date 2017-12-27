@@ -237,6 +237,18 @@
     text-decoration: none;
   }
 }
+// hide log in / log out links in main nav for admins
+.admin .item--log-out,
+.admin .item--log-in {
+  display: none;
+}
+// hide log in / log out links in main nav for everyone else when not in mobile viewport
+@include breakpoint($bp1) {
+  .item--log-out,
+  .item--log-in {
+    display: none;
+  }
+}
 
 .top-header__wrapper {
   font-size: $crumb * 1.4;
@@ -246,22 +258,22 @@
   background-color: $blue;
   padding: 10px 0;
   color: $white;
+  .path-frontpage & {
+    display: none;
+  }
 
   .visually-hidden {
-    @extend %element-invisible;
+    display: none;
   }
-  #block-hatter-account-menu {
+
+  .camp-dates {
     text-align: center;
+    .path-frontpage & {
+      display: none;
+    }
   }
-  #block-hatter-account-menu ul {
-    margin: 0;
-  }
-  #block-hatter-account-menu li {
-    @extend %list--simple;
-    display: inline-block;
-  }
+
   a {
-    padding: 0 10px;
     &:link,
     &:visited {
       color: $white;
@@ -269,10 +281,31 @@
     }
   }
 
+  nav {
+    display: none;
+    ul {
+      margin: 0;
+    }
+    li {
+      @extend %list--simple;
+      display: inline-block;
+    }
+    a {
+      padding: 0 10px;
+    }
+  }
+
   @include breakpoint($bp1) {
-    #block-hatter-account-menu {
+    .path-frontpage & {
+      display: block;
+    }
+    nav {
       float: right;
       text-align: right;
+      display: block;
+    }
+    .camp-dates {
+      text-align: left;
     }
   }
 }

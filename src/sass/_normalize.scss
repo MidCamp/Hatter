@@ -399,13 +399,9 @@ hr {
   overflow: visible; /* 2 */
 }
 
-/**
- * Set 1 unit of vertical rhythm on the top and bottom margin.
- */
-
 p,
 pre {
-  margin: 0 0 rhythm(1);
+  margin: rhythm(.5) 0;
 }
 
 

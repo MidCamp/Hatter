@@ -208,12 +208,14 @@
       visibility: visible;
       position: absolute;
       top: 100%;
+      z-index: 500;
     }
   }
 
   @include breakpoint($bp2) {
     .primary-nav__item.is-active & {
       width: 125%;
+      z-index: 500;
     }
   }
 }
@@ -225,7 +227,7 @@
   a:visited {
     display: block;
     margin: 0;
-    padding: rhythm(.25) 0 rhythm(.25) rhythm(1.25);
+    padding: rhythm(.25) rhythm(.625) rhythm(.25) rhythm(.625);
     color: $white;
   }
 

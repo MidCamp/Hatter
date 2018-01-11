@@ -682,7 +682,6 @@ textarea {
   padding: rhythm(.25);
   /* stylelint-disable */
   -webkit-appearance: none;
-  -webkit-user-select: none;
   /* stylelint-enable */
 
   &:hover,
@@ -731,7 +730,6 @@ input:not([type]) {
   text-indent: .5em;
   /* stylelint-disable */
   -webkit-appearance: none;
-  -webkit-user-select: none;
   /* stylelint-enable */
 
   &:hover,

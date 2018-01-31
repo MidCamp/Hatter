@@ -1,0 +1,123 @@
+.schedule {
+  margin-bottom: 2em;
+}
+
+.schedule__nav {
+  text-align: center;
+}
+.schedule__block {
+
+}
+.schedule__times {
+  margin-bottom: rhythm(1);
+}
+.schedule__teaser {
+  border-top: 1px solid $gray-light;
+  margin: rhythm(.5) 0;
+  padding: rhythm(.25) 0;
+  clear: both;
+  &:last-child {
+    border-bottom: 1px solid $gray-light;
+  }
+}
+.schedule__title {
+  font-family: $serif;
+  margin-top: 0;
+}
+.schedule__description {
+  font-family: $serif;
+}
+.schedule__speaker {
+  margin-top: 0;
+  margin-bottom: .5em;
+  display: table;
+  width: 49%;
+  float: left;
+  &:nth-of-type(odd) {
+    margin-left:1%;
+  }
+  &:nth-of-type(even) {
+    margin-right:1%;
+    clear: both;
+  }
+  & div {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.schedule__speaker__photo {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.schedule__speaker__name {
+  font-size: .9em;
+  line-height: 1.2;
+  padding: 0 1em;
+}
+.schedule__speaker__logo {
+  width: 125px;
+  & .logo-container {
+    @include aspect-ratio(16,9);
+  }
+}
+.schedule__track {
+  @include adjust-font-size-to($label, .9);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1em;
+  margin-top: rhythm(.5);
+  margin-bottom: 0;
+}
+.schedule__room {
+  @include adjust-font-size-to($label, .9);
+  font-weight: 400;
+  clear: both;
+}
+
+@media screen and (max-width: 480px) {
+  .schedule__speaker__photo {
+    width: 100px;
+    height: 100px;
+  }
+  .schedule__speaker__name {
+    width: 90%;
+  }
+  .schedule__speaker__logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .schedule__speaker {
+    width: 100%;
+    float: none;
+    &:nth-of-type(odd) {
+      margin-right:0;
+    }
+    &:nth-of-type(even) {
+      margin-left:0;
+    }
+  }
+  .schedule__speaker__name {
+    width: 70%;
+  }
+  .schedule__speaker__logo {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .schedule__speaker__photo {
+    width: 100px;
+    height: 100px;
+  }
+  .schedule__speaker__logo {
+    width: 100px;
+  }
+}
+

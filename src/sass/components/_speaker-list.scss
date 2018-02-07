@@ -4,15 +4,15 @@
  */
 
 .speaker-item {
-  background: url("../imgs/swirl.svg") no-repeat;
+//  background: url("../imgs/swirl.svg") no-repeat;
   background-position: center;
   text-align: center;
 
   &:hover {
 
-    .speaker-image {
-      background-position-x: 100%;
-    }
+//    .speaker-image {
+//      background-position-x: 100%;
+//    }
   }
 }
 

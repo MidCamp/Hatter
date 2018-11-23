@@ -81,4 +81,7 @@
 
 .event__button {
 
+  &:focus{
+    outline-color: $focus-outline-med-blue;
+  }
 }

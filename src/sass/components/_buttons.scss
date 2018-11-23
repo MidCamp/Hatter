@@ -28,7 +28,7 @@ input[type="button"] {
   padding: .25em 2em; 
   font-weight: 700;
   font-family: $serif;
-  outline: none;
+  //outline: none;
   border: 0;
   text-transform: uppercase;
   background: url("../imgs/crosshatch--purple.svg") no-repeat;
@@ -43,6 +43,10 @@ input[type="button"] {
   &:visited {
     background-color: $button-background;
     color: $button-text;
+  }
+
+  &:focus {
+    outline-color: $focus-outline-light-blue;
   }
 
   &:active,

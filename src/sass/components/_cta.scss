@@ -24,6 +24,10 @@
   @extend %cta-link;
   color: $yellow;
 
+  &:focus {
+    outline-color: $focus-outline-light-blue;
+  }
+
   svg {
     fill: $yellow;
 

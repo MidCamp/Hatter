@@ -18,6 +18,10 @@
 		text-decoration: underline;
 	}
 
+    a:focus {
+      outline-color: $focus-outline-light-blue;
+    }
+
 	a:active,
 	a:hover,
 	a:focus {

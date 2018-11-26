@@ -124,6 +124,9 @@
       padding: rhythm(.5) 10px;
     }
 
+    > a:focus {
+      outline-color: $focus-outline-light-blue;
+    }
     > a:active,
     > a:hover,
     > a:focus {
@@ -231,6 +234,10 @@
     color: $white;
   }
 
+  a:focus {
+    outline-color: $focus-outline-light-blue;
+  }
+
   a:active,
   a:hover,
   a:focus {
@@ -257,7 +264,7 @@
   font-family: $sans;
   font-weight: 400;
   overflow: hidden;
-  background-color: $blue;
+  background-color: $blue-dark;
   padding: 10px 0;
   color: $white;
   .path-frontpage & {
@@ -281,6 +288,10 @@
       color: $white;
       text-decoration: none;
     }
+    &:focus {
+      outline-color: $focus-outline-light-blue;
+    }
+
   }
 
   nav {
@@ -295,6 +306,9 @@
     a {
       padding: 0 10px;
     }
+    //a:focus {
+    //  outline-color: $focus-outline-light-blue;
+    //}
   }
 
   @include breakpoint($bp1) {

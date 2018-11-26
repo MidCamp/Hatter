@@ -6,6 +6,9 @@
 .banner {
   padding: rhythm(1.5) 0;
   border-bottom: 2px solid $green;
+  a:focus {
+    outline-color: $focus-outline-med-blue;
+  }
 }
 
 .banner-title {

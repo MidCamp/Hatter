@@ -16,6 +16,8 @@
   margin: rhythm(.5) 0;
   padding: rhythm(.25) 0;
   clear: both;
+  display: grid;
+  grid-template-columns: 1fr 10px minmax(400px, 635px) minmax(400px, 635px) 10px 1fr;
   &:last-child {
     border-bottom: 1px solid $gray-light;
   }
@@ -23,6 +25,7 @@
 .schedule__title {
   font-family: $serif;
   margin-top: 0;
+  grid-column: 1 / -1;
 }
 .schedule__description {
   font-family: $serif;
@@ -31,10 +34,14 @@
   margin-top: 0;
   margin-bottom: .5em;
   display: table;
-  width: 49%;
+  width: 100%;
   float: left;
+  grid-column: 2 / -4;
+  grid-row: 3 / 4;
+  height: 100%;
   &:nth-of-type(odd) {
     margin-left:1%;
+    grid-column: 4 / -1;
   }
   &:nth-of-type(even) {
     margin-right:1%;
@@ -72,11 +79,13 @@
   line-height: 1em;
   margin-top: rhythm(.5);
   margin-bottom: 0;
+  grid-column: 1 / -1;
 }
 .schedule__room {
   @include adjust-font-size-to($label, .9);
   font-weight: 400;
   clear: both;
+  grid-column: 1 / -1;
 }
 
 @media screen and (max-width: 480px) {
@@ -93,11 +102,19 @@
 }
 
 @media screen and (max-width: 780px) {
+  .schedule__teaser {
+    grid-template-columns: 1fr 10px minmax(300px, 740px) 10px 1fr;
+  }
   .schedule__speaker {
     width: 100%;
     float: none;
+    grid-column: 2 / -2;
+    grid-row: 3 / 4;
     &:nth-of-type(odd) {
       margin-right:0;
+      grid-column: 2 / -2;
+      grid-row: 4 / 4;
+      margin-left: unset;
     }
     &:nth-of-type(even) {
       margin-left:0;

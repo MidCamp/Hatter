@@ -17,7 +17,7 @@
   padding: rhythm(.25) 0;
   clear: both;
   display: grid;
-  grid-template-columns: 1fr 10px minmax(400px, 635px) 10px minmax(400px, 635px) 10px 1fr;
+  grid-template-columns: 1fr minmax(405px, 695px) 10px minmax(405px, 695px) 1fr;
   &:last-child {
     border-bottom: 1px solid $gray-light;
   }
@@ -33,38 +33,38 @@
 .schedule__speaker {
   margin-top: 0;
   margin-bottom: .5em;
-  display: table;
   width: 100%;
   float: left;
-  grid-column: 2 / -5;
+  grid-column: 1 / -4;
   grid-row: 3 / 4;
   height: 100%;
+  display: flex;
+  align-items: center;
   &:nth-of-type(odd) {
-    margin-left:1%;
-    grid-column: 5 / -1;
+    grid-column: 4 / -1;
   }
   &:nth-of-type(even) {
-    margin-right:1%;
     clear: both;
   }
   & div {
-    display: table-cell;
     vertical-align: middle;
   }
 }
 .schedule__speaker__photo {
   width: 125px;
   height: 125px;
+  flex: none;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   float: left;
   text-align: center;
+  margin-right: 1em;
 }
 .schedule__speaker__name {
   font-size: .9em;
   line-height: 1.2;
-  padding: 0 1em;
+  padding-right: 1em;
 }
 .schedule__speaker__logo {
   width: 125px;
@@ -103,16 +103,16 @@
 
 @media screen and (max-width: 780px) {
   .schedule__teaser {
-    grid-template-columns: 1fr 10px minmax(300px, 740px) 10px 1fr;
+    grid-template-columns: 1fr minmax(300px, 780px) 1fr;
   }
   .schedule__speaker {
     width: 100%;
     float: none;
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     grid-row: 3 / 4;
     &:nth-of-type(odd) {
       margin-right:0;
-      grid-column: 2 / -2;
+      grid-column: 1 / -1;
       grid-row: 4 / 4;
       margin-left: unset;
     }

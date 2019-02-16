@@ -17,7 +17,8 @@
   padding: rhythm(.25) 0;
   clear: both;
   display: grid;
-  grid-template-columns: 1fr minmax(405px, 695px) 10px minmax(405px, 695px) 1fr;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 0 25px;
   &:last-child {
     border-bottom: 1px solid $gray-light;
   }
@@ -25,24 +26,20 @@
 .schedule__title {
   font-family: $serif;
   margin-top: 0;
-  grid-column: 1 / -1;
+  grid-column-end: span 2;
 }
 .schedule__description {
   font-family: $serif;
+  grid-column-end: span 2;
 }
 .schedule__speaker {
   margin-top: 0;
   margin-bottom: .5em;
   width: 100%;
   float: left;
-  grid-column: 1 / -4;
-  grid-row: 3 / 4;
   height: 100%;
   display: flex;
   align-items: center;
-  &:nth-of-type(odd) {
-    grid-column: 4 / -1;
-  }
   &:nth-of-type(even) {
     clear: both;
   }
@@ -80,13 +77,13 @@
   line-height: 1em;
   margin-top: rhythm(.5);
   margin-bottom: 0;
-  grid-column: 1 / -1;
+  grid-column-end: span 2;
 }
 .schedule__room {
   @include adjust-font-size-to($label, .9);
   font-weight: 400;
   clear: both;
-  grid-column: 1 / -1;
+  grid-column-end: span 2;
 }
 
 @media screen and (max-width: 480px) {
@@ -104,17 +101,20 @@
 
 @media screen and (max-width: 780px) {
   .schedule__teaser {
-    grid-template-columns: 1fr minmax(300px, 780px) 1fr;
+    grid-template-columns: repeat(1, 100%);
   }
+  .schedule__track,
+  .schedule__title,
+  .schedule__room {
+    grid-column-end: span 1;
+  }
+
   .schedule__speaker {
     width: 100%;
     float: none;
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-column-end: span 1;
     &:nth-of-type(odd) {
       margin-right:0;
-      grid-column: 1 / -1;
-      grid-row: 4 / 4;
       margin-left: unset;
     }
     &:nth-of-type(even) {

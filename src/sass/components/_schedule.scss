@@ -28,7 +28,6 @@
   grid-column-end: span 2;
 }
 .schedule__description {
-  font-family: $serif;
   grid-column-end: span 2;
 }
 .schedule__speaker {
@@ -106,6 +105,7 @@
   }
   .schedule__track,
   .schedule__title,
+  .schedule__description,
   .schedule__room {
     grid-column-end: span 1;
   }

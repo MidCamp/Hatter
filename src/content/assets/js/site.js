@@ -14,7 +14,7 @@
   Drupal.behaviors.siteNav = {
     attach: function (context, settings) {
       // open and close mobile nav with hamburger menu
-      $('.primary-nav__trigger').click(function (event) {
+      $('.primary-nav__trigger').once('siteNav').click(function (event) {
         $(this).toggleClass('is-active');
         $(this).blur();
         event.preventDefault();
@@ -22,7 +22,7 @@
       });
 
       // open and close child menus in the main nav
-      $('.primary-nav__sublist--trigger').click(function (event) {
+      $('.primary-nav__sublist--trigger').once('siteNav').click(function (event) {
         $(this).parents('.primary-nav__item').toggleClass('is-active');
         $(this).blur();
         event.preventDefault();

@@ -61,14 +61,7 @@
 }
 
 // sponsor page
-// @todo this is so stupid, but the views css is trumped by the block container
-.block-views-blockevent-sponsors-block-2,
-.block-views-blockevent-sponsors-block-3,
-.block-views-blockevent-sponsors-block-4,
-.block-views-blockevent-sponsors-block-5,
-.block-views-blockevent-sponsors-block-6,
-.block-views-blockevent-sponsors-block-7,
-.block-views-blockevent-sponsors-block-8,
+[class*="block-views-blockevent-sponsors-block-"],
 .sponsor-group {
   clear: both;
 }

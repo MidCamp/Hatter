@@ -9,7 +9,7 @@
         "sort-packages": true
     },
     "require": {
-        "spress/spress": "^2.1"
+        "spress/spress": "^3"
     },
     "autoload": {
         "psr-0": { "MidCamp\\": "src/" }

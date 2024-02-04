@@ -1,6 +1,6 @@
 {
   "name": "hatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The hatter styleguide for MidCamp.org",
   "repository": "https://github.com/MidCamp/Hatter.git",
   "main": "index.js",
